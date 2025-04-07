@@ -1,49 +1,81 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom'; 
 
-const Menu = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const toggleMenu = () => setIsExpanded(prev => !prev);
+import { Link } from 'react-router-dom';
 
+interface MenuProps {
+  isExpanded: boolean;
+  toggleMenu: () => void;
+}
+
+const Menu: React.FC<MenuProps> = ({ isExpanded, toggleMenu }) => {
   return (
-    <nav className="text-black fixed top-2/3 transform -translate-y-1/2 p-2 w-[15vw] h-full">
+    <nav className="text-black fixed top-2/3 transform -translate-y-1/2 p-2 h-full">
       <div className="top-1/2 transform -translate-y-1/2">
         <i
-          className={`bi bi-list p-0 h-fit text-3xl cursor-pointer m-0 ${isExpanded ? 'text-primary' : ''}`}
+          className={`bi bi-list p-0 h-fit text-2xl md:text-3xl cursor-pointer m-0 ${isExpanded ? 'text-primary' : ''} transition-all duration-300`}
           onClick={toggleMenu}
         ></i>
       </div>
       <ul
-        className={`w-[100%] p-0 transition-opacity duration-300 ease-in-out ${isExpanded ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-y-hidden'}`}
+        className={`w-[${isExpanded ? '15vw' : '4vw'}] p-0 transition-all duration-300 ease-in-out`}
       >
-        <li className='flex w-[100%] mb-2'>
-          <Link to="/" onClick={toggleMenu}>
-            <p className='text-2xl'> <i className='bi bi-house p-0'></i> Início </p>
+        <li className="flex items-center justify-start w-full mb-2">
+          <Link to="/" onClick={toggleMenu} className="flex items-center">
+            <i className="bi bi-house text-l md:text-2xl"></i>
+            <p
+              className={`ml-2 text-l md:text-2xl transition-opacity duration-500 ease-in-out ${isExpanded ? 'opacity-100 delay-100' : 'opacity-0'}`}
+            >
+              Início
+            </p>
           </Link>
         </li>
-        <li className='flex w-[100%] mb-2'>
-          <Link to="/sobre" onClick={toggleMenu}>
-            <p className='text-2xl'> <i className='bi bi-person-vcard p-0'></i> Sobre </p>
+        <li className="flex items-center justify-start w-full mb-2">
+          <Link to="/sobre" onClick={toggleMenu} className="flex items-center">
+            <i className="bi bi-person-vcard text-l md:text-2xl"></i>
+            <p
+              className={`ml-2 text-l md:text-2xl transition-opacity duration-500 ease-in-out ${isExpanded ? 'opacity-100 delay-200' : 'opacity-0'}`}
+            >
+              Sobre
+            </p>
           </Link>
         </li>
-        <li className='flex w-[100%] mb-2'>
-          <Link to="/contact" onClick={toggleMenu}>
-            <p className='text-2xl'> <i className='bi bi-person fs-4 p-0'></i> Contato </p>
+        <li className="flex items-center justify-start w-full mb-2">
+          <Link to="/contact" onClick={toggleMenu} className="flex items-center">
+            <i className="bi bi-person fs-4 text-l md:text-2xl"></i>
+            <p
+              className={`ml-2 text-l md:text-2xl transition-opacity duration-500 ease-in-out ${isExpanded ? 'opacity-100 delay-300' : 'opacity-0'}`}
+            >
+              Contato
+            </p>
           </Link>
         </li>
-        <li className='flex w-[100%] mb-2'>
-          <Link to="/links" onClick={toggleMenu}>
-            <p className='text-2xl'> <i className='bi bi-book fs-4'></i> Links </p>
+        <li className="flex items-center justify-start w-full mb-2">
+          <Link to="/links" onClick={toggleMenu} className="flex items-center">
+            <i className="bi bi-book fs-4 text-l md:text-2xl"></i>
+            <p
+              className={`ml-2 text-l md:text-2xl transition-opacity duration-500 ease-in-out ${isExpanded ? 'opacity-100 delay-400' : 'opacity-0'}`}
+            >
+              Links
+            </p>
           </Link>
         </li>
-        <li className='flex w-[100%] mb-2'>
-          <Link to="/projetos" onClick={toggleMenu}>
-            <p className='text-2xl'> <i className='bi bi-code-slash'></i> Projetos </p>
+        <li className="flex items-center justify-start w-full mb-2">
+          <Link to="/projetos" onClick={toggleMenu} className="flex items-center">
+            <i className="bi bi-code-slash text-l md:text-2xl"></i>
+            <p
+              className={`ml-2 text-l md:text-2xl transition-opacity duration-500 ease-in-out ${isExpanded ? 'opacity-100 delay-500' : 'opacity-0'}`}
+            >
+              Projetos
+            </p>
           </Link>
         </li>
-        <li className='flex w-[100%] mb-2'>
-          <Link to="/apps" onClick={toggleMenu}>
-            <p className='text-2xl'> <i className='bi bi-send-arrow-down-fill'></i> Aplicativos </p>
+        <li className="flex items-center justify-start w-full mb-2">
+          <Link to="/apps" onClick={toggleMenu} className="flex items-center">
+            <i className="bi bi-send-arrow-down-fill text-l md:text-2xl"></i>
+            <p
+              className={`ml-2 text-l md:text-2xl transition-opacity duration-500 ease-in-out ${isExpanded ? 'opacity-100 delay-600' : 'opacity-0'}`}
+            >
+              Aplicativos
+            </p>
           </Link>
         </li>
       </ul>

@@ -1,13 +1,18 @@
-import Missao from "./missao";
-import Sobre from "./Sobre"
+import { useState } from 'react';
+import Conteudo from './conteudo';
+import Menu from '../Menu';
 
-const Conteudo = () => {
+
+const Layout = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleMenu = () => setIsExpanded(prev => !prev);
+
   return (
-      <> 
-      <Sobre /> 
-      <Missao />
-      </>
+    <div className="flex">
+      <Menu isExpanded={isExpanded} toggleMenu={toggleMenu} />
+      <Conteudo isExpanded={isExpanded} />
+    </div>
   );
-}
+};
 
-export default Conteudo;
+export default Layout;

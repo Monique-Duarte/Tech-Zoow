@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Conteudo from './components/Conteudo'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import Menu from './components/Menu'
 import Contact from './components/Contacts'
 import Inicio from './components/Inicio'
+import Layout from './components/Conteudo'
+import Menu from './components/Menu'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Inicio />} />
-        <Route path='/sobre' element={<Conteudo />} />
+        <Route path='/sobre' element={<Layout />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
 

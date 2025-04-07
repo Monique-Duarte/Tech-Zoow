@@ -1,6 +1,15 @@
+import { useState } from "react";
+
 const Inicio = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <div id="SobreMim" className="block mx-auto justify-center text-justify py-12 px-4 max-w-[80vw] font-winky bg-[#b1acac]">
+      <div
+        id="SobreMim"
+        className={`transition-all duration-300 ease-in-out ${isExpanded ? "ml-[30vw]" : "ml-[15vw]"
+          }`}
+      ></div>
       <h1 className="text-2xl mb-5 relative overflow-y-hidden">Início
       </h1>
       <h2 className="p-1 ">

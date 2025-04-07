@@ -1,6 +1,6 @@
 const Missao = () => {
   return (
-    <div id="SobreMim" className="block mx-auto justify-center text-justify py-5 px-4  max-w-[80vw] bg-[#b1acac]">
+    <div id="SobreMim" className="block max-w-[80vw] md:mx-auto md:justify-center text-justify md:py-12 py-5 px-4 bg-[#b1acac]">
         <h1 className="text-2xl mb-5">Missão
         </h1>
         <h2 className="p-2">
