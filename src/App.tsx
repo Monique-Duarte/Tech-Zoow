@@ -1,27 +1,33 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Contact from './components/Contacts'
-import Inicio from './components/Inicio'
-import Layout from './components/Conteudo'
-import Menu from './components/Menu'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Layout from './components/Conteudo';
+import Inicio from './components/Inicio';
+import Sobre from './components/Conteudo/Sobre';
+import Contato from './components/Contacts';
 
-function App() {
+const App: React.FC = () => {
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
+
+  const toggleMenu = (): void => setIsExpanded(prev => !prev);
+
   return (
-    <BrowserRouter>
+    <Router>
       <Header />
-      <Menu />
-
       <Routes>
-        <Route path='/' element={<Inicio />} />
-        <Route path='/sobre' element={<Layout />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route
+          path="/"
+          element={<Layout isExpanded={isExpanded} toggleMenu={toggleMenu} />} 
+        >
+          <Route index element={<Inicio isExpanded={isExpanded} />} /> 
+          <Route path="/sobre" element={<Sobre isExpanded={isExpanded} />} /> 
+          <Route path="/contato" element={<Contato isExpanded={isExpanded} />} /> 
+        </Route>
       </Routes>
-
       <Footer />
-    </BrowserRouter >
-  )
-}
+    </Router>
+  );
+};
 
-export default App
+export default App;
