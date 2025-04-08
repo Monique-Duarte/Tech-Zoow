@@ -6,6 +6,7 @@ import Layout from './components/Conteudo';
 import Inicio from './components/Inicio';
 import Sobre from './components/Conteudo/Sobre';
 import Contato from './components/Contacts';
+import Missao from './components/Conteudo/missao';
 
 const App: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         >
           <Route index element={<Inicio isExpanded={isExpanded} />} /> 
           <Route path="/sobre" element={<Sobre isExpanded={isExpanded} />} /> 
+          <Route path="/missao" element={<Missao isExpanded={isExpanded} />} /> 
           <Route path="/contato" element={<Contato isExpanded={isExpanded} />} /> 
         </Route>
       </Routes>

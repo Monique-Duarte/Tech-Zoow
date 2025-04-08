@@ -3,7 +3,7 @@ import ContactIcon from "./contactIcon";
 
 const RedesSociais: React.FC<ContatoProps> = ({ isExpanded }) => {
   return (
-    <div className={`flex max-w-[80vw] md:mx-auto md:justify-center text-justify md:py-12 py-5 px-4 bg-[#b1acac] transition-all duration-300 ease-in-out ${isExpanded ? 'ml-[30vw]' : 'ml-[15vw]'}`}>
+    <div className= 'flex max-w-[80vw] text-justify'>
       <ContactIcon 
         href="https://www.instagram.com/henriquecostafoh/"
         iconClass="bi bi-instagram"
