@@ -58,12 +58,12 @@ const Menu: React.FC<MenuProps> = ({ isExpanded, toggleMenu }) => {
           </Link>
         </li>
         <li className="flex items-center justify-start w-full mb-2">
-          <Link to="/links" className="flex items-center">
+          <Link to="/servicos" className="flex items-center">
             <i className="bi bi-book fs-4 text-l md:text-2xl"></i>
             <p
               className={`ml-2 text-lx md:text-lg transition-opacity duration-500 ease-in-out ${isExpanded ? 'opacity-100 delay-400' : 'opacity-0'}`}
             >
-              Links
+              Serviços
             </p>
           </Link>
         </li>
