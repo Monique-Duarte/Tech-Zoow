@@ -5,9 +5,7 @@ const Sobre: React.FC<SobreProps> = ({ isExpanded }) => {
     <div id="Sobre" className= 'h-[100vh] block max-w-[80vw] mx-auto md:justify-center text-justify md:py-12 py-5 px-4 bg-[#b1acac]'>
       <h1 className="text-lg md:text-2xl font-bold mb-5 relative overflow-y-hidden">Sobre a empresa </h1>
       <h2 className="p-1 ">
-        Fundada em julho/2010 pelo zootecnista Henrique Costa Filho, MSc Nutrição e Produção Animal — FMVZ/USP,
-        a TechZoow, é uma consultoria independente, trabalhando com empresas de nutrição animal e Pet Food.O foco da 
-        consultoria é na nutrição animal, treinamento de pessoas, e modelos de vendas e distribuição de
+        O foco da consultoria é na nutrição animal, treinamento de pessoas, e modelos de vendas e distribuição de
         produtos para empresas.
       </h2>
       <br></br>

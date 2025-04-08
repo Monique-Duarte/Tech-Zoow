@@ -5,19 +5,22 @@ const Inicio: React.FC<InicioProps> = ({ isExpanded }) => {
   return (
     <div
       id="Home"
-      className='h-[100vh] block max-w-[80vw] mx-auto md:justify-center text-justify md:py-12 py-5 px-4 bg-[#b1acac]'>
+      className='h-[100%] mb-10 block max-w-[80vw] mx-auto md:justify-center text-justify md:py-12 py-5 px-4 bg-[#b1acac]'>
       <h1 className="text-lg md:text-2xl font-bold mb-5 relative overflow-y-hidden">Início</h1>
-      <h2 className="p-1">
-        Fundada em julho/2010 pelo zootecnista Henrique Costa Filho, MSc Nutrição e Produção Animal — FMVZ/USP, a TechZoow,
-        é uma consultoria independente, trabalhando com empresas de nutrição animal e Pet Food. O foco da consultoria é na nutrição animal,
-        treinamento de pessoas, e modelos de vendas e distribuição de produtos para empresas.
+      <h2 className="md:px-10">
+      Fundada em julho de 2010 pelo zootecnista Henrique Costa Filho, MSc em Nutrição e Produção Animal pela FMVZ/USP, a TechZoow é uma consultoria independente especializada 
+      em nutrição animal e Pet Food. Desde sua criação, a empresa tem se dedicado a oferecer soluções inovadoras e eficazes para empresas do setor, buscando sempre a excelência
+      em seus serviços.
       </h2>
       <br></br>
-      <h2>
-        A experiência técnica-comercial de mais de 22 anos do proprietário em grandes empresas do setor de nutrição animal do Brasil
-        (Purina, Cargill Fertilizantes – hoje Mosaic, Guabi, Grupo Rancho Alegre e Allnova/H.J. Baker), credenciam a TechZoow a prestar
-        consultoria em diversas áreas, aceitando qualquer desafio desse segmento de mercado.
+      <h2 className="md:px-10">
+      A TechZoow se destaca por sua capacidade de identificar oportunidades de melhoria e implementar estratégias que promovem o crescimento e a eficiência dos negócios de 
+      seus clientes. Com uma abordagem centrada nas necessidades do cliente, a empresa oferece consultoria em áreas como:
       </h2>
+      <h4 className="md:px-15 my-2 mx-5">Desenvolvimento de Produtos.</h4>
+      <h4 className="md:px-15 my-2 mx-5">Estratégias de Vendas.</h4>
+      <h4 className="md:px-15 my-2 mx-5">Business Intelligence.</h4>
+      <h4 className="md:px-15 my-2 mx-5">Treinamento e Capacitação.</h4>
     </div>
   );
 };
