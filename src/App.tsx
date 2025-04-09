@@ -8,6 +8,7 @@ import Servicos from './components/Paginas/Servicos';
 import Projetos from './components/Paginas/Projetos';
 import Menu from './components/Menu';
 import Banner from './components/Banner';
+import Uteis from './components/Paginas/LinksUteis';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/contato" element={<Contato  />} /> 
         <Route path="/servicos" element={<Servicos />} /> 
         <Route path="/projetos" element={<Projetos />} /> 
+        <Route path="/uteis" element={<Uteis />} /> 
       </Routes>
       <Footer />
     </Router>
