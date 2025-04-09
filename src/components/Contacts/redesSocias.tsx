@@ -1,7 +1,6 @@
-import ContatoProps from "../Interfaces/ContatoProps";
 import ContactIcon from "./contactIcon";
 
-const RedesSociais: React.FC<ContatoProps> = ({ isExpanded }) => {
+const RedesSociais = () => {
   return (
     <div className= 'flex max-w-[80vw] text-justify'>
       <ContactIcon 

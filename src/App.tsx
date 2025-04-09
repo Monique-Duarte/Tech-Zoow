@@ -1,35 +1,27 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Layout from './components/Conteudo';
-import Inicio from './components/Inicio';
-import Sobre from './components/Conteudo/Sobre';
-import Contato from './components/Contacts';
-import Missao from './components/Conteudo/missao';
-import Servicos from './components/Serviços';
-import Projetos from './components/Projetos';
+import Inicio from './components/Paginas/Inicio';
+import Sobre from './components/Paginas/Sobre';
+import Contato from './components/Paginas/Contato';
+import Servicos from './components/Paginas/Servicos';
+import Projetos from './components/Paginas/Projetos';
+import Menu from './components/Menu';
+import Banner from './components/Banner';
 
-const App: React.FC = () => {
-  const [isExpanded, setIsExpanded] = useState<boolean>(false);
-
-  const toggleMenu = (): void => setIsExpanded(prev => !prev);
+const App = () => {
 
   return (
     <Router>
       <Header />
+      <Menu />
+      <Banner />
       <Routes>
-        <Route
-          path="/"
-          element={<Layout isExpanded={isExpanded} toggleMenu={toggleMenu} />} 
-        >
-          <Route index element={<Inicio isExpanded={isExpanded} />} /> 
-          <Route path="/sobre" element={<Sobre isExpanded={isExpanded} />} /> 
-          <Route path="/missao" element={<Missao isExpanded={isExpanded} />} /> 
-          <Route path="/contato" element={<Contato isExpanded={isExpanded} />} /> 
-          <Route path="/servicos" element={<Servicos isExpanded={isExpanded} />} /> 
-          <Route path="/projetos" element={<Projetos isExpanded={isExpanded} />} /> 
-        </Route>
+        <Route path="/" element={<Inicio />} /> 
+        <Route path="/sobre" element={<Sobre />} /> 
+        <Route path="/contato" element={<Contato  />} /> 
+        <Route path="/servicos" element={<Servicos />} /> 
+        <Route path="/projetos" element={<Projetos />} /> 
       </Routes>
       <Footer />
     </Router>

@@ -1,14 +1,14 @@
-import ContatoProps from "../Interfaces/ContatoProps"
 import RedesSociais from "./redesSocias"
 
-const FaleConosco: React.FC<ContatoProps> = ({ isExpanded }) => {
+
+const FaleConosco = () => {
   return (
     <div className="w-[80vw] mx-auto ">
       <h3 className="text-center text-lg md:text-2xl font-bold pt-5 mb-3">Fale Conosco</h3>
         <div className="md:flex overflow-hidden rounded-lg content">
           <h4 className="ml-5 mb-5 md:items-center content-center">
             <h3>Contatos:</h3>
-          <RedesSociais isExpanded={isExpanded} />
+          <RedesSociais />
             Telefone: +55 (19) 99114-4408 
             <br></br>
             <br></br>
@@ -18,7 +18,7 @@ const FaleConosco: React.FC<ContatoProps> = ({ isExpanded }) => {
             Aguas da Prata - SP <br></br>
             CEP: 13890-000
           </h4>
-          <iframe className="mb-5 w-[50vw] mx-auto h-[30vh] md:h-[60vh] md:w-[50vw]"
+          <iframe className="mb-5 w-[80vw] mx-auto h-[30vh] md:h-[60vh] md:w-[50vw]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14802.970705715126!2d-46.725459303460774!3d-21.944441775971654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9ced33a696d59%3A0x6912669867b1d137!2s%C3%81guas%20da%20Prata!5e0!3m2!1spt-BR!2sbr!4v1744119555751!5m2!1spt-BR!2sbr"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
