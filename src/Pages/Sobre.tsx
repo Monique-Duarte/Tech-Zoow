@@ -1,5 +1,6 @@
-import BlocoTexto from "../Sobre/BlocoTexto";
-import TituloSecao from "../Sobre/TituloSecao";
+import TituloSecao from "../components/Servicos/TituloSecaoServiços";
+import BlocoTexto from "../components/Sobre/BlocoTexto";
+
 
 const Sobre = () => {
   return (

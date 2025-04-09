@@ -1,4 +1,5 @@
-import FaleConosco from "../Contacts/faleConosco";
+import FaleConosco from "../components/Contacts/faleConosco";
+
 
 const Contato = () => {
   return (
