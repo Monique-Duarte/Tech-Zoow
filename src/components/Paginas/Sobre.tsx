@@ -1,5 +1,5 @@
 import BlocoTexto from "../Sobre/BlocoTexto";
-import TituloSecaoServicos from "../Sobre/TituloSecaoServiços";
+import TituloSecao from "../Sobre/TituloSecao";
 
 const Sobre = () => {
   return (
@@ -8,7 +8,7 @@ const Sobre = () => {
       className="h-full mb-10 block max-w-[100vw] text-justify md:py-12 py-5 px-4 bg-[#f3f3f3] rounded-sm"
     >
       <div className="max-w-[80vw] mx-auto space-y-6">
-        <TituloSecaoServicos titulo="Sobre a empresa" />
+        <TituloSecao titulo="Sobre a empresa" />
         <BlocoTexto>
           O foco da consultoria é na nutrição animal, treinamento de pessoas, e
           modelos de vendas e distribuição de produtos para empresas.
@@ -21,7 +21,7 @@ const Sobre = () => {
           diversas áreas, aceitando qualquer desafio desse segmento de mercado.
         </BlocoTexto>
 
-        <TituloSecaoServicos titulo="Missão" />
+        <TituloSecao titulo="Missão" />
         <BlocoTexto>
           Oferecer soluções em serviços que possam desenvolver e valorizar os
           animais, as pessoas e as empresas comprometidas em todo o sistema,
@@ -29,13 +29,13 @@ const Sobre = () => {
           resultado econômico e/ou zootécnico da empresa e dos seus clientes.
         </BlocoTexto>
 
-        <TituloSecaoServicos titulo="Visão" />
+        <TituloSecao titulo="Visão" />
         <BlocoTexto>
           Ser reconhecida como empresa competente e ágil, que entrega resultados
           acima das expectativas dos seus clientes.
         </BlocoTexto>
 
-        <TituloSecaoServicos titulo="Valores" />
+        <TituloSecao titulo="Valores" />
         <BlocoTexto>
           Ética, agilidade, eficiência e humildade, sempre otimizando os
           recursos naturais e preservando o meio ambiente e a cultura de cada

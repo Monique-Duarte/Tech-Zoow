@@ -9,7 +9,7 @@ const Menu = () => {
     { name: 'Sobre', path: '/sobre' },
     { name: 'Serviços', path: '/servicos' },
     { name: 'Projetos', path: '/projetos' },
-    { name: 'links úteis', path: '/uteis' },
+    { name: 'Links', path: '/uteis' },
     { name: 'Contato', path: '/contato' },
   ];
 

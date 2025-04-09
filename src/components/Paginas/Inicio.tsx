@@ -1,6 +1,6 @@
 const Inicio = () => {
   return (
-    <div id="Home" className='h-[100vh] mb-10 block max-w-[100vw] md:justify-center text-justify md:py-12 py-5 px-4 bg-[#f3f3f3] rounded-sm'>
+    <div id="Home" className='h-[100vh] mb-10 block max-w-[100vw] md:justify-center text-justify md:py-12 py-5 px-4 bg-[#f3f3f3]'>
       <div className="max-w-[80vw] mx-auto">
         <h1 className="text-lg md:text-2xl font-bold mb-5 relative overflow-y-hidden text-[#036016]">Início</h1>
         <h2 className="md:px-10">
