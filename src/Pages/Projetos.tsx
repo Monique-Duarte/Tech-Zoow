@@ -10,7 +10,7 @@ import icc from '../../src/assets/ICC.png';
 
 const Projetos = () => {
   return (
-    <div className='h-[100%] p-5 w-[100vw] mb-10 bg-[#f3f3f3] rounded-sm'>
+    <div className='h-[100%] p-5 w-[100vw] bg-[#f3f3f3] rounded-sm'>
       <div className="max-w-[80vw] mx-auto">
         <h1 className='text-lg md:text-2xl font-bold mb-5 relative overflow-y-hidden text-[#036016]'>Lista de Projetos</h1>
         <ul className='block text-justify list-disc px-5'>

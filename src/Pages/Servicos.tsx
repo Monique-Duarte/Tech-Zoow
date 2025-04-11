@@ -5,7 +5,7 @@ import TituloSecaoServicos from "../components/Sobre/TituloSecao";
 
 const Servicos = () => {
   return (
-    <div className="p-5 w-full bg-[#f3f3f3] rounded-sm mb-10">
+    <div className="p-5 w-full bg-[#f3f3f3] rounded-sm">
       <div className="max-w-[80vw] mx-auto">
         <TituloSecaoServicos titulo="Lista de serviços" />
         <ListaServicos />

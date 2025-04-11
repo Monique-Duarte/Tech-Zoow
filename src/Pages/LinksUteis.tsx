@@ -2,7 +2,7 @@ import Lattes from "../../src/assets/lattes.png";
 
 const Uteis = () => {
   return (
-    <div className="min-h-[100vh] mb-10 block max-w-[100vw] text-justify md:py-12 py-5 px-4 bg-[#f3f3f3]">
+    <div className="min-h-[100vh] block max-w-[100vw] text-justify md:py-12 py-5 px-4 bg-[#f3f3f3]">
       <div className="max-w-[80vw] mx-auto">
         <h1 className="text-lg md:text-2xl font-bold mb-5 text-[#036016]">
           Links úteis

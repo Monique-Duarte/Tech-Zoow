@@ -6,7 +6,7 @@ const Sobre = () => {
   return (
     <div
       id="Sobre"
-      className="h-full mb-10 block max-w-[100vw] text-justify md:py-12 py-5 px-4 bg-[#f3f3f3] rounded-sm"
+      className="h-full block max-w-[100vw] text-justify md:py-12 py-5 px-4 bg-[#f3f3f3] rounded-sm"
     >
       <div className="max-w-[80vw] mx-auto space-y-6">
         <TituloSecao titulo="Sobre a empresa" />
