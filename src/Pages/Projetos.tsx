@@ -1,12 +1,12 @@
-import sustennutri from '../../assets/sustennutri.png';
-import purinutre from '../../assets/purinutre.png';
-import yes from '../../assets/yes.png';
-import qualy from '../../assets/Qualy.png';
-import aurora from '../../assets/aurora.png';
-import allnova from '../../assets/allnova.png';
-import nutrane from '../../assets/nutrane.png';
-import dsm from '../../assets/dsm.png';
-import icc from '../../assets/ICC.png';
+import sustennutri from '../../src/assets/sustennutri.png';
+import purinutre from '../../src/assets/purinutre.png';
+import yes from '../../src/assets/yes.png';
+import qualy from '../../src/assets/Qualy.png';
+import aurora from '../../src/assets/aurora.png';
+import allnova from '../../src/assets/allnova.png';
+import nutrane from '../../src/assets/nutrane.png';
+import dsm from '../../src/assets/dsm.png';
+import icc from '../../src/assets/ICC.png';
 
 const Projetos = () => {
   return (
