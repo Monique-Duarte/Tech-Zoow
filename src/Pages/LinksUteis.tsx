@@ -1,4 +1,4 @@
-import Lattes from "../../assets/lattes.png";
+import Lattes from "../../src/assets/lattes.png";
 
 const Uteis = () => {
   return (
