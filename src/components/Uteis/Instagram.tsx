@@ -17,7 +17,7 @@ const InstagramPosts = () => {
         slides: { perView: 3, spacing: 16 },
       },
       "(min-width: 1024px)": {
-        slides: { perView: 3, spacing: 24 },
+        slides: { perView: 3, spacing: 16 },
       },
     },
   });
@@ -74,7 +74,7 @@ const InstagramPosts = () => {
       {/* Carrossel */}
       <div
         ref={sliderRef}
-        className="keen-slider w-full"
+        className="keen-slider w-[90vw]"
         onMouseEnter={() => clearTimeout(timeoutRef.current!)}
         onMouseLeave={() =>
           (timeoutRef.current = setTimeout(() => slider.current?.next(), 5000))
@@ -82,9 +82,9 @@ const InstagramPosts = () => {
       >
         {posts.map((url, index) => (
           <div key={index} className="keen-slider__slide flex justify-center">
-            <div className="w-full max-w-[340px] aspect-[1/1.3] overflow-hidden">
+            <div className="w-full aspect-[1/1.3] overflow-hidden">
               <blockquote
-                className="instagram-media w-full h-full pointer-events-none" // 👈 isso impede que o clique afete ele
+                className="instagram-media w-full h-full" // Removido pointer-events-none
                 data-instgrm-permalink={url}
                 data-instgrm-version="14"
                 style={{
@@ -95,6 +95,7 @@ const InstagramPosts = () => {
                   margin: "0 auto",
                   width: "100%",
                 }}
+                onClick={() => window.open(url, "_blank")} // Abre a postagem em uma nova aba
               ></blockquote>
             </div>
           </div>
