@@ -21,7 +21,7 @@ const Banner = () => {
   return (
     <div>
       <img
-        className="w-[100vw] md:h-[50vh] object-cover"
+        className="w-[100vw] md:h-[40vh] h-[30vw] object-cover"
         src={imagemBanner}
         alt="Banner"
       />

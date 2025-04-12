@@ -14,12 +14,14 @@ const Menu = () => {
   ];
 
   return (
-    <nav className="z-[999] fixed left-1/2 transform -translate-x-1/2 backdrop-blur bg-white/30 border border-white/30 rounded-3xl ring-1 ring-white/10 shadow-md text-black p-2 justify-center">
-      <ul className="flex max-w-[95vw]">
+    <nav className="z-[999] fixed left-1/2 transform -translate-x-1/2 backdrop-blur
+    bg-white/30 border border-white/30 rounded-3xl ring-1 ring-white/10 shadow-md
+    text-black p-1 items-center justify-center">
+      <ul className="flex  items-center max-w-[95vw]">
         {menuItems.map(({ name, path }) => {
           const isActive = pathname === path;
           return (
-            <li key={name} className="items-center mb-2">
+            <li key={name}>
               <Link
                 to={path}
                 className={`flex items-center md:mr-5 px-2 py-1 transition-all duration-200 ${isActive

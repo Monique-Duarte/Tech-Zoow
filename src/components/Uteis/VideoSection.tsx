@@ -1,6 +1,6 @@
 const VideoSection = () => {
   return (
-    <div className="block mx-2">
+    <div className="block md:w-[50vw] mx-auto">
       <h3 className="text-lg md:text-l mb-2 text-[#036016]">
         Entrevista ao programa Ourofino em Campo em 02/02/2016
       </h3>

@@ -5,12 +5,12 @@ type PlanilhaLinkProps = {
 
 const PlanilhaLink = ({ title, href }: PlanilhaLinkProps) => (
   <a
-    className="inline-block md:text-lg py-1"
+    className="inline px-4 md:text-lg py-1 cursor-pointer hover:underline"
     href={href}
     target="_blank"
     rel="noopener noreferrer"
   >
-    <h2>{title}</h2>
+    {title}
   </a>
 );
 
