@@ -22,7 +22,7 @@ const InstagramPosts = () => {
     },
   });
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide] = useState(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const posts = [
