@@ -5,7 +5,7 @@ type PlanilhaLinkProps = {
 
 const PlanilhaLink = ({ title, href }: PlanilhaLinkProps) => (
   <a
-    className="inline px-4 md:text-lg py-1 cursor-pointer hover:underline"
+    className="inline px-7 md:text-lg py-1 cursor-pointer hover:underline"
     href={href}
     target="_blank"
     rel="noopener noreferrer"
