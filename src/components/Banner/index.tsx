@@ -7,9 +7,9 @@ import industria from "../../assets/industria.jpg";
 const bannerItens = [
   { img: cerealGrains, path: "/" },
   { img: pellet, path: "/sobre" },
-  { img: grains, path: "/servicos" },
+  { img: industria, path: "/servicos" },
   { img: industria, path: "/projetos" },
-  { img: cerealGrains, path: "/uteis" },
+  { img: grains, path: "/uteis" },
   { img: cerealGrains, path: "/contato" },
 ];
 

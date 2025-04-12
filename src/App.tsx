@@ -8,7 +8,7 @@ import Sobre from './Pages/Sobre';
 import Contato from './Pages/Contato';
 import Servicos from './Pages/Servicos';
 import Projetos from './Pages/Projetos';
-import Uteis from './Pages/LinksUteis';
+import Uteis from './Pages/Uteis';
 
 const App = () => {
   return (
