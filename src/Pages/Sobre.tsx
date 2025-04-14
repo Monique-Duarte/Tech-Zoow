@@ -1,6 +1,6 @@
 import TituloSecao from "../components/Servicos/TituloSecaoServiços";
 import BlocoTexto from "../components/Sobre/BlocoTexto";
-
+import racaoPote from "../assets/racao2.png";
 
 const Sobre = () => {
   return (
@@ -21,7 +21,8 @@ const Sobre = () => {
           Allnova/H.J. Baker), credenciam a TechZoow a prestar consultoria em
           diversas áreas, aceitando qualquer desafio desse segmento de mercado.
         </BlocoTexto>
-
+        <div className="md:flex">
+        <div className="block md:w-[50vw]">
         <TituloSecao titulo="Missão" />
         <BlocoTexto>
           Oferecer soluções em serviços que possam desenvolver e valorizar os
@@ -29,19 +30,20 @@ const Sobre = () => {
           através do uso de tecnologia avançada e apropriada, buscando o melhor
           resultado econômico e/ou zootécnico da empresa e dos seus clientes.
         </BlocoTexto>
-
         <TituloSecao titulo="Visão" />
         <BlocoTexto>
           Ser reconhecida como empresa competente e ágil, que entrega resultados
           acima das expectativas dos seus clientes.
         </BlocoTexto>
-
         <TituloSecao titulo="Valores" />
         <BlocoTexto>
           Ética, agilidade, eficiência e humildade, sempre otimizando os
           recursos naturais e preservando o meio ambiente e a cultura de cada
           local.
         </BlocoTexto>
+        </div>
+        <img src={racaoPote} className="w-[40vw]" />
+        </div>
       </div>
     </div>
   );

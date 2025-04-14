@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import cerealGrains from "../../assets/cerealGrains.jpg";
 import pellet from "../../assets/pellet.jpg";
-import grains from "../../assets/grains.jpg";
+import racaoColorida from "../../assets/racao.png";
 import industria from "../../assets/industria.jpg";
 import Racao from "../../assets/racao.jpg";
 
@@ -10,7 +10,7 @@ const bannerItens = [
   { img: pellet, path: "/sobre" },
   { img: industria, path: "/servicos" },
   { img: industria, path: "/projetos" },
-  { img: grains, path: "/uteis" },
+  { img: racaoColorida, path: "/uteis" },
   { img: cerealGrains, path: "/contato" },
 ];
 
