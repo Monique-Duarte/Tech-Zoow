@@ -8,12 +8,13 @@ import Test from "../../assets/test.jpg"
 import Pellets from "../../assets/pellets.jpg"
 import Racao2 from "../../assets/racao2.png"
 import Racao from "../../assets/racao.png"
+import imgBanner from "../../assets/banner.jpg"
 
 
 const bannerItens = [
   { img: Pellets, path: "/" },
   { img: Racao, path: "/sobre" },
-  { img: industria, path: "/servicos" },
+  { img: imgBanner, path: "/servicos" },
   { img: industria, path: "/projetos" },
   { img: Test, path: "/uteis" },
   { img: Racao2, path: "/contato" },
