@@ -1,6 +1,6 @@
 import TituloSecao from "../components/Servicos/TituloSecaoServiços";
 import BlocoTexto from "../components/Sobre/BlocoTexto";
-import racaoPote from "../assets/racao2.png";
+import racaoextrusada from "../assets/02.png";
 
 const Sobre = () => {
   return (
@@ -42,7 +42,7 @@ const Sobre = () => {
           local.
         </BlocoTexto>
         </div>
-        <img src={racaoPote} className="w-[40vw]" />
+        <img src={racaoextrusada} className="w-[30vw] ml-2" />
         </div>
       </div>
     </div>
