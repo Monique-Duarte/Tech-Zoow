@@ -22,7 +22,7 @@ const bannerItens = [
 const Banner = () => {
   const location = useLocation();
   const bannerAtual = bannerItens.find((item) => item.path === location.pathname);
-  const imagemBanner = bannerAtual ? bannerAtual.img : cerealGrains; 
+  const imagemBanner = bannerAtual ? bannerAtual.img : Pellets; 
 
   return (
     <div>
