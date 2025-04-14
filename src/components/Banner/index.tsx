@@ -1,18 +1,22 @@
 import { useLocation } from "react-router-dom";
-import cerealGrains from "../../assets/cerealGrains.jpg";
-import pellet from "../../assets/pellet.jpg";
-// import racaoColorida from "../../assets/racao.png";
+// import cerealGrains from "../../assets/cerealGrains.jpg";
+// import pellet from "../../assets/pellet.jpg";
+// // import racaoColorida from "../../assets/racao.png";
+// // import Racao from "../../assets/racao.jpg";
 import industria from "../../assets/industria.jpg";
-import Racao from "../../assets/racao.jpg";
 import Test from "../../assets/test.jpg"
+import Pellets from "../../assets/pellets.jpg"
+import Racao2 from "../../assets/racao2.png"
+import Racao from "../../assets/racao.png"
+
 
 const bannerItens = [
-  { img: Racao, path: "/" },
-  { img: pellet, path: "/sobre" },
+  { img: Pellets, path: "/" },
+  { img: Racao, path: "/sobre" },
   { img: industria, path: "/servicos" },
   { img: industria, path: "/projetos" },
   { img: Test, path: "/uteis" },
-  { img: cerealGrains, path: "/contato" },
+  { img: Racao2, path: "/contato" },
 ];
 
 const Banner = () => {
