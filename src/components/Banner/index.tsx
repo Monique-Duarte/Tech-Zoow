@@ -1,34 +1,29 @@
 import { useLocation } from "react-router-dom";
-// import cerealGrains from "../../assets/cerealGrains.jpg";
-// import pellet from "../../assets/pellet.jpg";
-// // import racaoColorida from "../../assets/racao.png";
-// // import Racao from "../../assets/racao.jpg";
 import industria from "../../assets/industria.jpg";
 import Test from "../../assets/test.jpg"
-import Pellets from "../../assets/pellets.jpg"
-import Racao2 from "../../assets/racao2.png"
-import Racao from "../../assets/racao.png"
+import Extrusada from "../../assets/extrusada.jpeg"
+import Fabrica from "../../assets/Fabrica.jpeg"
 import imgBanner from "../../assets/banner.jpg"
 
 
 const bannerItens = [
-  { img: Pellets, path: "/" },
-  { img: Racao, path: "/sobre" },
+  { img: Extrusada, path: "/" },
+  { img: Fabrica, path: "/sobre" },
   { img: imgBanner, path: "/servicos" },
   { img: industria, path: "/projetos" },
   { img: Test, path: "/uteis" },
-  { img: Racao2, path: "/contato" },
+  { img: Extrusada, path: "/contato" },
 ];
 
 const Banner = () => {
   const location = useLocation();
   const bannerAtual = bannerItens.find((item) => item.path === location.pathname);
-  const imagemBanner = bannerAtual ? bannerAtual.img : Pellets; 
+  const imagemBanner = bannerAtual ? bannerAtual.img : Extrusada; 
 
   return (
     <div>
       <img
-        className="w-[100vw] md:h-[40vh] h-[30vw] object-cover"
+        className="w-[100vw] md:h-[50vh] h-[30vw] object-cover"
         src={imagemBanner}
         alt="Banner"
       />

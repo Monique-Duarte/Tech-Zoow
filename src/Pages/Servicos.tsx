@@ -1,5 +1,6 @@
 import ListaServicos from "../components/Servicos/ListaServicos";
 import TituloSecaoServicos from "../components/Sobre/TituloSecao";
+import Fabrica from "../assets/Fabrica.jpeg";
 
 
 
@@ -9,6 +10,7 @@ const Servicos = () => {
       <div className="max-w-[80vw] mx-auto">
         <TituloSecaoServicos titulo="Lista de serviços" />
         <ListaServicos />
+        <img className="w-[100vw] md:h-[50vh] h-[40vw] mt-2 object-cover" src={Fabrica}/>
       </div>
     </div>
   );

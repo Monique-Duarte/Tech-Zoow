@@ -62,7 +62,7 @@ const InstagramPosts = () => {
       {/* Carrossel */}
       <div
         ref={sliderRef}
-        className="keen-slider md:w-[80vw] w-[90vw] max-w-screen-lg touch-pan-y"
+        className="keen-slider md:w-[60vw] w-[90vw] max-w-screen-lg touch-pan-y"
         onMouseEnter={() => clearTimeout(timeoutRef.current!)}
         onMouseLeave={() =>
           (timeoutRef.current = setTimeout(() => slider.current?.next(), 5000))
