@@ -42,7 +42,7 @@ const Sobre = () => {
           local.
         </BlocoTexto>
         </div>
-        <img src={racaoextrusada} className="w-[30vw] ml-2" />
+        <img src={racaoextrusada} className="m-auto w-50 h-50 p-1 md:w-[20vw] md:h-[20vw]" />
         </div>
       </div>
     </div>
