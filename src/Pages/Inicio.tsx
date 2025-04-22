@@ -20,9 +20,9 @@ const Inicio = () => {
         <h4 className="md:px-15 my-2 mx-5">Business Intelligence.</h4>
         <h4 className="md:px-15 my-2 mx-5">Treinamento e Capacitação.</h4>
       </div>
-      <div className='block center mx-auto'>
+      <div className='block justify-center center mx-auto'>
         <img  className="m-auto w-50 h-50 md:w-80 md:h-80 rounded-full object-cover" src={foto}/>
-        <p className='md:text-lg px-15 mx-8 my-2'>Henrique Costa Filho</p>
+        <p className='md:text-lg  text-center my-2'>Henrique Costa Filho</p>
       </div>
     </div>
   );
