@@ -12,7 +12,7 @@ import InstagramPost from "../components/Uteis/InstagramPost";
 
 const Uteis = () => {
   return (
-    <div className="min-h-[100vh] mx-auto block max-w-[100vw] md:py-12 py-5 bg-[#f3f3f3]">
+    <div className="min-h-[100vh] mx-auto block max-w-[100vw] md:py-12 py-5 bg-[#ffffff]">
       <div className="max-w-[80vw] mx-auto">
         <h1 className="text-lg md:text-2xl font-bold mb-5 text-[#036016]">
           Links úteis
@@ -20,11 +20,11 @@ const Uteis = () => {
         <div className="md:flex mb-6">
           <div className="block w-[90vw]">
             <VideoSection />
-              <h1 className="md:w-[50vw] mx-auto text-lg md:text-2xl font-bold py-5 text-[#036016]">
+              <h1 className="md:w-[70vw] mx-auto text-lg md:text-2xl font-bold py-5 text-[#036016]">
                 Planilhas:
               </h1>
             <div 
-            className="flex flex-wrap justify-items-normal md:w-[70vw] mx-auto backdrop-blur
+            className="flex flex-wrap justify-items-normal md:w-[50vw] mx-auto backdrop-blur
           bg-white/30 border border-white/30 rounded-3xl ring-1 ring-white/10 shadow-md">
               <PlanilhaLink
                 title="Cálculo de GPD"
@@ -55,7 +55,7 @@ const Uteis = () => {
                 href="https://onedrive.live.com/:x:/g/personal/C432CA1DF45AAA76/s!AnaqWvQdyjLEmlNUGuvLInrlcPlm?..."
               />
             </div>
-            <div className="md:w-[60vw] w-[80vw] h-full">
+            <div className="md:w-[60vw] w-[80vw]">
               <h2 className="md:w-[80vw] mx-auto text-lg md:text-2xl font-bold mt-10 text-[#036016]">
                 Publicações:
               </h2>

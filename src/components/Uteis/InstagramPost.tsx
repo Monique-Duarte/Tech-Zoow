@@ -74,7 +74,7 @@ const InstagramPosts = () => {
             className="keen-slider__slide flex justify-center"
           >
             <div
-              className="relative w-full aspect-[1/1.3] max-w-[300px] rounded-xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105"
+              className="relative w-full aspect-[1/1.3] min-h-[400px] max-w-[300px] rounded-xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105"
               onClick={() => window.open(url, "_blank")}
             >
               <iframe

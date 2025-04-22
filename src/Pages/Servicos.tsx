@@ -6,7 +6,7 @@ import Fabrica from "../assets/Fabrica.jpeg";
 
 const Servicos = () => {
   return (
-    <div className="md:py-12 py-5 px-4 w-full bg-[#f3f3f3] rounded-sm">
+    <div className="md:py-12 py-5 px-4 w-full bg-[#ffffff]  rounded-sm">
       <div className="max-w-[80vw] mx-auto">
         <TituloSecaoServicos titulo="Lista de serviços" />
         <ListaServicos />

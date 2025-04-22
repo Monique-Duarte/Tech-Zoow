@@ -5,7 +5,7 @@ const VideoSection = () => {
         Entrevista ao programa Ourofino em Campo em 02/02/2016
       </h3>
       <iframe
-        className="md:w-[660px] md:h-[315px] mr-2"
+        className="md:w-[880px] md:h-[415px]"
         src="https://www.youtube.com/embed/9q_AAGejKqc?si=X_mD2A3uVSN6NHol"
         title="Em Discussão: uso de ração na dieta do gado"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
