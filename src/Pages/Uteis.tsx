@@ -55,7 +55,7 @@ const Uteis = () => {
                 href="https://onedrive.live.com/:x:/g/personal/C432CA1DF45AAA76/s!AnaqWvQdyjLEmlNUGuvLInrlcPlm?..."
               />
             </div>
-            <div className="md:w-[60vw] w-[80vw]">
+            <div className="md:w-[60vw] w-[80vw] h-full">
               <h2 className="md:w-[80vw] mx-auto text-lg md:text-2xl font-bold mt-10 text-[#036016]">
                 Publicações:
               </h2>
