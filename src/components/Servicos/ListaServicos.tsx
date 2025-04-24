@@ -14,8 +14,8 @@ const servicos = [
 const ListaServicos = () => {
   return (
     <div>
-      <h2 className="text-xl text-[#036016]">em empresas</h2>
-      <ul className="list-disc text-justify space-y-4">
+      <h2 className="text-2xl text-[#036016] mb-3">em empresas</h2>
+      <ul className="list-disc text-justify space-y-4 md:text-xl mb-3">
         {servicos.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
