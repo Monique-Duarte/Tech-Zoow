@@ -6,7 +6,7 @@ const Header = () => {
         <img className="w-[10vw]" src={logo} alt="TechZoow Logo"></img> */}
       <div className="block">
       <h1>TechZoow Consultoria </h1>
-      <h2>Consultoria em tecnologia</h2>
+      {/* <h2>Consultoria em tecnologia</h2> */}
       </div>
       {/* </div> */}
     </header>
