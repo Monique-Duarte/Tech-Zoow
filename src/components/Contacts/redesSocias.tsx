@@ -2,7 +2,7 @@ import ContactIcon from "./contactIcon";
 
 const RedesSociais = () => {
   return (
-    <div className= 'flex max-w-[80vw] text-justify'>
+    <div className= 'flex  mx-auto '>
       <ContactIcon 
         href="https://www.instagram.com/henriquecostafoh/"
         iconClass="bi bi-instagram"

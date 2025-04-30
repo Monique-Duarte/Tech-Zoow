@@ -10,7 +10,7 @@ const Menu = () => {
     { name: 'Serviços', path: '/servicos' },
     { name: 'Projetos', path: '/projetos' },
     { name: 'Links', path: '/uteis' },
-    { name: 'Contato', path: '/contato' },
+    // { name: 'Contato', path: '/contato' },
   ];
 
   return (
